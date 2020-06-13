@@ -17,10 +17,11 @@
       "@/*": ["./*"]
     },
     "types": [
-      "@types/node",
       "@nuxt/types",
+      "@types/node",
       "@types/express",
-      "@types/socket.io"
+      "@types/socket.io",
+      "@types/socket.io-client"
     ]
   },
   "exclude": ["node_modules", ".nuxt", "dist"]

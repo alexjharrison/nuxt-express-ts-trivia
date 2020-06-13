@@ -1,13 +1,15 @@
-import http from 'http'
+// import http from 'http'
+// import SocketIO from 'socket.io'
 import express from 'express'
 import consola from 'consola'
 import { Nuxt, Builder } from 'nuxt'
 import config from '../nuxt.config.js'
-import socket from './controllers/socket/index'
+// import socket from './controllers/socket/index'
 
 const app = express()
-export const io = new http.Server(app)
-io.on('connection', socket)
+// const server = new http.Server(app)
+// const io = SocketIO(server)
+// io.on('connection', socket)
 
 // Import and Set Nuxt.js options
 const dev = process.env.NODE_ENV !== 'production'
